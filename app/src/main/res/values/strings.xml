@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Lens OCR Demo</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_scan">Scan</string>
+    <string name="settings_section_general">Settings general</string>
+    <string name="settings_set_color_title">Set color</string>
+    <string name="settings_section_image_processing">Settings image processing</string>
+    <string name="settings_section_ui">Settings UI</string>
+    <string name="settings_section_api">Settings API</string>
+    <string name="content_description">content description</string>
+    <string name="settings_primary_color">Primary color</string>
+    <string name="settings_primary_dark_color">Primary dark color</string>
+    <string name="settings_secondary_color">Secondary color</string>
+    <string name="settings_secondary_dark_color">Secondary dark color</string>
+    <string name="settings_accent_color">Accent color</string>
+    <string name="settings_accent_dark_color">Accent dark color</string>
+    <string name="settings_detect_fill_color">Doc detect fill color</string>
+    <string name="settings_submit_background_color">Submit button background color</string>
+    <string name="settings_submit_border_color">Submit button border color</string>
+    <string name="settings_submit_font_color">Submit button font color</string>
+    <string name="settings_submit_corner_radius">Submit button corner radius</string>
+    <string name="settings_ocr_corner_radius">OCR view corner radius</string>
+    <string name="settings_ocr_view_width">OCR view width</string>
+    <string name="settings_ocr_view_height">OCR view height</string>
+    <string name="settings_auto_rotate">Auto rotate</string>
+    <string name="settings_auto_doc_detection">Auto doc detection and crop</string>
+    <string name="settings_auto_capture">Auto capture</string>
+    <string name="settings_close_camera_submit">Close camera on submit</string>
+    <string name="settings_is_production">Is production</string>
+    <string name="settings_ocr_regex">OCR Regex</string>
+    <string name="settings_doc_detect_stroke_color">Doc detect stroke UI color</string>
+    <string name="settings_set_submit_button_corner_radius">Set submit button corner radius</string>
+    <string name="settings_set_ocr_view_corner_radius">Set OCR view corner radius</string>
+    <string name="settings_set_ocr_view_width">Set OCR view width</string>
+    <string name="settings_set_ocr_view_height">Set OCR view height</string>
+    <string name="settings_hint_ocr_regex">OCR Regex</string>
+    <string name="settings_set_ocr_regex">Set OCR Regex</string>
+    <string name="logs_ocr_details" translatable="false">OCR details</string>
+    <string name="logs_close" translatable="false">Close</string>
+</resources>
