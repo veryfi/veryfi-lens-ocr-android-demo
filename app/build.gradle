@@ -44,12 +44,12 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.8.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.8.0-rc01'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.github.martin-stone:hsv-alpha-color-picker-android:3.0.1'
     implementation 'com.github.lriccardo:TimelineView:1.1.2'
 
     // Veryfi lens
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.6.2.6'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.6.2.7'
 }
