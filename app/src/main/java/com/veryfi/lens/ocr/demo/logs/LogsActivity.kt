@@ -9,8 +9,6 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.GsonBuilder
-import com.google.gson.JsonParser
 import com.lriccardo.timelineview.TimelineDecorator
 import com.veryfi.lens.VeryfiLens
 import com.veryfi.lens.VeryfiLensDelegate
@@ -71,18 +69,13 @@ class LogsActivity : AppCompatActivity() {
     @SuppressLint("NotifyDataSetChanged")
     private fun showLogs(json: JSONObject) {
         val log = Log()
-        val jsonString = json.toString()
-        val jsonParser = JsonParser()
-        val jsonElement = jsonParser.parse(jsonString)
-        val gson = GsonBuilder().setPrettyPrinting().create()
-        val prettyJsonString = gson.toJson(jsonElement)
 
         when (if (json.has(STATUS)) json.getString(STATUS) else "") {
             CLOSE -> log.title = resources.getString(R.string.logs_close)
             else -> log.title = resources.getString(R.string.logs_ocr_details)
         }
 
-        log.message = prettyJsonString
+        log.message = json
         adapter.addItem(log)
         adapter.notifyDataSetChanged()
         binding.timelineRv.scrollToPosition(adapter.itemCount - 1)
