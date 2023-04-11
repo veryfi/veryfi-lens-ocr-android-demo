@@ -28,6 +28,8 @@ You can read further about Lens in Veryfi's dedicated page: https://www.veryfi.c
 ## Veryfi Lens OCR Android Example <a name="example"></a>
 This is an example of how to use Veryfi Lens OCR in your app, you can find the developer documentation [here](https://app.veryfi.com/lens/docs/android/).
 
+![LensOCRDemo](ocr-demo.gif)
+
 ## How to add Veryfi Lens OCR to your project <a name="maven"></a>
 
 Install from our private [Maven](https://nexus.veryfi.com/repository/maven-releases/), a
@@ -36,7 +38,7 @@ package manager for Java.
 Add in your project build.gradle file the Veryfi Lens OCR Android SDK dependency:
 ```ruby
 dependencies {
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.0.8'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.0.9'
 }
 ```
 
