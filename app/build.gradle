@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.veryfi.lens.ocr.demo'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.veryfi.lens.ocr.demo"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0.0"
         buildConfigField 'String', 'VERYFI_CLIENT_ID', "\"${System.getenv("VERYFI_CLIENT_ID")}\""
@@ -52,5 +52,5 @@ dependencies {
     implementation 'com.github.pvarry:android-json-viewer:v1.1'
 
     // Veryfi lens
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.2.9'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.2.10'
 }
