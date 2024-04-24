@@ -38,7 +38,7 @@ package manager for Java.
 Add in your project build.gradle file the Veryfi Lens OCR Android SDK dependency:
 ```ruby
 dependencies {
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.2.11'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.2.12'
 }
 ```
 
