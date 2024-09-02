@@ -36,6 +36,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
     androidResources {
         noCompress "veryfi"
@@ -52,5 +53,7 @@ dependencies {
     implementation 'com.github.pvarry:android-json-viewer:v1.1'
 
     // Veryfi lens
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.3.22'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:1.7.3.23'
+    androidTestImplementation 'androidx.test:core:1.6.1'
+    androidTestImplementation "androidx.test.ext:junit:1.2.1"
 }
