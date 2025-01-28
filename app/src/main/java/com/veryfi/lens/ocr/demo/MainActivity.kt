@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     private var autoRotateIsOn = false
     private var autoDocDetectionAndCropIsOn = veryfiLensSettings.autoDocDetectionAndCropIsOn
     private var isProduction = veryfiLensSettings.isProduction
+    private var ignoreRemoteSettings = true
     private var primaryColor = veryfiLensSettings.primaryColor ?: "#FF005AC1"
     private var primaryDarkColor = veryfiLensSettings.primaryDarkColor ?: "#FFADC6FF"
     private var secondaryColor = veryfiLensSettings.secondaryColor ?: "#FFDBE2F9"
@@ -85,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         viewBinding.switchAutoRotate.isChecked = autoRotateIsOn
         viewBinding.switchAutoDocDetection.isChecked = autoDocDetectionAndCropIsOn
         viewBinding.switchIsProduction.isChecked = isProduction
+        viewBinding.switchIgnoreRemoteSettings.isChecked = ignoreRemoteSettings
         initColors()
         initFloatValues()
         initStringValues()
@@ -143,6 +145,10 @@ class MainActivity : AppCompatActivity() {
 
         viewBinding.switchIsProduction.setOnCheckedChangeListener { _, isChecked ->
             isProduction = isChecked
+        }
+
+        viewBinding.switchIgnoreRemoteSettings.setOnCheckedChangeListener { _, isChecked ->
+            ignoreRemoteSettings = isChecked
         }
 
         viewBinding.imgPrimaryColor.setOnClickListener {
@@ -395,6 +401,7 @@ class MainActivity : AppCompatActivity() {
         veryfiLensSettings.docDetectStrokeUIColor = docDetectStrokeUIColor
         veryfiLensSettings.submitButtonCornerRadius = submitButtonCornerRadius
         veryfiLensSettings.isProduction = isProduction
+        veryfiLensSettings.ignoreRemoteSettings = ignoreRemoteSettings
         veryfiLensSettings.ocrRegex = ocrRegex
         veryfiLensSettings.ocrViewCornerRadius = ocrViewCornerRadius
         veryfiLensSettings.ocrViewWidth = ocrViewWidth
