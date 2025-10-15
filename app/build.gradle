@@ -38,14 +38,11 @@ android {
         viewBinding true
         buildConfig true
     }
-    androidResources {
-        noCompress += "veryfi"
-    }
 }
 
 dependencies {
     // Veryfi lens
-    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:2.1.0.42'
+    implementation 'com.veryfi.lens:veryfi-lens-ocr-sdk:2.1.0.43'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.7.0'
