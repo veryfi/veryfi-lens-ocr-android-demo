@@ -27,7 +27,6 @@
     <string name="settings_auto_doc_detection">Auto doc detection and crop</string>
     <string name="settings_auto_capture">Auto capture</string>
     <string name="settings_close_camera_submit">Close camera on submit</string>
-    <string name="settings_is_production">Is production</string>
     <string name="settings_ignore_remote_settings">Ignore remote settings</string>
     <string name="settings_ocr_regex">OCR Regex</string>
     <string name="settings_doc_detect_stroke_color">Doc detect stroke UI color</string>
